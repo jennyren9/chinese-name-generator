@@ -24,14 +24,14 @@ Notes
 - Data: `data/names.js` contains in-memory surname and character lists. Edit to expand.
 
 Demo snapshot
-- Place a screenshot PNG at `public/demo/snapshot.png` to include a visual demo of the app.
+- A demo PNG snapshot is included at `public/demo/ScreenShot_2026-02-22_213628_229.png`.
 
-How to add your PNG
+How to replace the PNG
 
-- Upload or copy your PNG file to `public/demo/snapshot.png` in the project root.
-- Alternatively you can provide a base64 PNG and I can write it into `public/demo/snapshot.png` for you — paste the base64 data and I will add it.
+- To replace the snapshot, add a new PNG at `public/demo/snapshot.png` (or overwrite the existing file), then commit and push.
+- If you prefer, you can paste base64 PNG data and I will write it into `public/demo/snapshot.png` for you.
 
-Note: I removed the previous SVG and left this placeholder so you can add the original PNG screenshot.
+Note: the committed demo PNG reflects the UI screenshot you provided.
 
 API
 - POST /generate-names
