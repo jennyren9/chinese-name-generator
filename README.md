@@ -33,6 +33,16 @@ How to replace the PNG
 
 Note: the committed demo PNG reflects the UI screenshot you provided.
 
+Thumbnail generation note
+- The dev container doesn't have ImageMagick installed, so I copied the committed PNG to `public/demo/snapshot.png` as a fallback thumbnail and display it inline on the frontpage.
+- To create a smaller physical thumbnail file locally, run on your machine:
+
+```bash
+convert public/demo/ScreenShot_2026-02-22_213628_229.png -resize 600x public/demo/snapshot.png
+```
+
+Install ImageMagick if needed (`sudo apt install imagemagick`). After replacing `snapshot.png`, commit and push.
+
 API
 - POST /generate-names
   - body: { gender: 'male'|'female'|'neutral', age: 'baby'|'child'|'adult', vibe: string, surname?: string }
